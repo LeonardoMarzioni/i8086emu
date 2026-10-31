@@ -1,0 +1,18 @@
+loaded 304 bytes from fibonacci.bin at 1000:0100
+ > 1000:0100  BF0002         mov di,0x200
+ > 1000:0100  BF0002         mov di,0x200
+   1000:0103  C7050000       mov word [di],0x0
+   1000:0107  C745020100     mov word [di+0x2],0x1
+   1000:010C  83C704         add di,byte +0x4
+   1000:010F  B91600         mov cx,0x16
+breakpoint 1 at 1000:0120
+breakpoint 1 at 1000:0120
+*> 1000:0120  F4             hlt
+1000:0200  00 00 01 00 01 00 02 00 03 00 05 00 08 00 0D 00  |................|
+AX=6FF1  BX=0000  CX=0000  DX=0000  SP=FFFE  BP=0000  SI=0000  DI=0230
+DS=1000  ES=1000  SS=1000  CS=1000  IP=0120  FLAGS=F046 [ZF PF]
+*> 1000:0120  F4             hlt
+halted at 1000:0120
+cpu halted at 1000:0121, use reset to restart
+reset, reloaded fibonacci.bin
+ > 1000:0100  BF0002         mov di,0x200

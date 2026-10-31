@@ -1,0 +1,9 @@
+disasm 5
+b 120
+c
+x 200 16
+regs
+step
+step
+reset
+quit

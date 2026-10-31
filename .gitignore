@@ -1,0 +1,10 @@
+# Directory di build (preset CMake)
+/build/
+/build-*/
+
+# Dati di SingleStepTests: si scaricano con lo script, non si versionano
+/data/
+
+# File generati da strumenti locali
+/.cache/
+compile_commands.json

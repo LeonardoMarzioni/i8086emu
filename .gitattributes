@@ -1,0 +1,7 @@
+# Sorgenti sempre con fine riga LF, indipendentemente dal sistema che fa checkout
+* text=auto eol=lf
+
+# Binari: mai convertire i fine riga (un binario NASM piccolo può sembrare testo)
+*.bin binary
+*.com binary
+*.gz  binary
